@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Upload Your Image</h1>
+
+        <div class="upload-box" id="drop-area">
+
+            <div class="upload-content" id="upload-content">
+
+                <div class="upload-icon">↑</div>
+
+                <h2>Drag & Drop Your Image</h2>
+
+                <p>or</p>
+
+                <button type="button" id="browse-btn">
+                    Browse File
+                </button>
+
+                <input
+                    type="file"
+                    id="file-input"
+                    accept="image/*"
+                    hidden
+                >
+
+                <p class="file-info">
+                    Supported: JPG, JPEG, PNG, GIF
+                </p>
+
+            </div>
+
+            <div class="preview-container" id="preview-container">
+                <img id="preview-image" src="" alt="Preview">
+
+                <div class="image-details">
+                    <p id="file-name"></p>
+                    <p id="file-size"></p>
+                </div>
+
+                <button type="button" id="remove-btn">
+                    Remove Image
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="JS/script.js"></script>
+
+</body>
+</html>

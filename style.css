@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.upload-box {
+    width: 100%;
+    min-height: 320px;
+
+    background: white;
+    border: 2px dashed #4b7bec;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.upload-box.dragover {
+    background: #eef4ff;
+    border-color: #2563eb;
+}
+
+.upload-content {
+    width: 100%;
+}
+
+.upload-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #eaf1ff;
+    color: #2563eb;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.upload-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upload-content p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#browse-btn {
+    border: none;
+    outline: none;
+
+    padding: 12px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+#browse-btn:hover {
+    background: #1d4ed8;
+}
+
+.file-info {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.preview-container {
+    display: none;
+    width: 100%;
+}
+
+.preview-container img {
+    width: 100%;
+    max-height: 230px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.image-details {
+    margin-bottom: 15px;
+}
+
+.image-details p {
+    color: #555;
+    margin: 5px 0;
+    word-break: break-word;
+}
+
+#remove-btn {
+    border: none;
+    padding: 11px 22px;
+
+    background: #ef4444;
+    color: white;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+#remove-btn:hover {
+    background: #dc2626;
+}
